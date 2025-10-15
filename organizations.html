@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • Bonnie Soto</title>
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Runs before styles load = no flash
+    (function () {
+      const stored = localStorage.getItem('mode') || 'auto';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const dark = stored === 'dark' || (stored === 'auto' && prefersDark);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      // Help form controls pick the right look in some browsers
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+    })();
+  </script>
+  <meta name="theme-color" content="#f89938">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="navwrap">
+    <nav>
+      <div class="brand"><span class="dot"></span><span>Bonnie&nbsp;Soto</span></div>
+      <div class="links">
+        <a href="index.html" aria-current="false">Home</a>
+<a href="about.html" aria-current="false">About</a>
+<a href="resume.html" aria-current="false">Resume</a>
+<a href="projects.html" aria-current="false">Projects</a>
+<a href="organizations.html" aria-current="page">Organizations</a>
+<a href="contact.html" aria-current="false">Contact</a>
+      </div>
+    </nav>
+  </div>
+  
+<header class="hero">
+  <div>
+    <h1>Organizations</h1>
+    <p>Community, collaboration, and causes that matter.</p>
+  </div>
+</header>
+<main>
+  <div class="grid">
+    <div class="card col-12">
+      <p>I have been a team leader for several class projects. one of which we had to design and develop 2 make-over websites for a real business. I divided and deligated work to be completed every week and filled in positions to complete the project. Our client was blown away with the results. it was difficult to choose which one they loved more.</p>
+      <p>I am a member of the Phi Thetta Kappa. This organization has helped me to connect with other high-achieving students and to develop my leadership skills. I have participated in online leadership courses and looking forward to attending the next conference.</p>
+      <p>I am also a member of the American Legion and Veterans of Foreign Wars. These organizations have helped me to connect with other veterans and to give back to my community. I have volunteered for several events and have helped to raise money for veterans in need.</p>
+      <p>I am proud to be a member of these organizations and I am grateful for the opportunities they have provided me.</p>
+    </div>
+  </div>
+</main>
+<footer>Always open to meaningful collaborations.</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+:root {
+  /* -- Fill from your Branding Guide if these differ */
+  --brand-primary: #f89938;   /* orange */
+  --brand-secondary: #cc3366; /* pink */
+  --brand-accent: #0099cd;    /* blue */
+  --brand-soft: #FFF5F2;      /* Soft ivory */
+  --brand-muted: #9aa0a6;
+  --radius: 18px;
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.12);
+  --shadow-glow: 0 0 0 rgba(0,0,0,0);
+  --accent-hue: 12; /* will animate on scroll */
+  --accent: hsl(var(--accent-hue), 90%, 55%);
+}
+
+/* Dark mode tokens (auto via prefers-color-scheme; can be toggled) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-secondary2: #ECECEC;
+    --brand-soft: #0E0F10;
+    --brand-muted: #b6bcc6;
+  }
+}

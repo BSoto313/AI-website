@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • Bonnie Soto</title>
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Runs before styles load = no flash
+    (function () {
+      const stored = localStorage.getItem('mode') || 'auto';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const dark = stored === 'dark' || (stored === 'auto' && prefersDark);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      // Help form controls pick the right look in some browsers
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+    })();
+  </script>
+  <meta name="theme-color" content="#f89938">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="navwrap">
+    <nav>
+      <div class="brand"><span class="dot"></span><span>Bonnie&nbsp;Soto</span></div>
+      <div class="links">
+        <a href="index.html" aria-current="page">Home</a>
+<a href="about.html" aria-current="false">About</a>
+<a href="resume.html" aria-current="false">Resume</a>
+<a href="projects.html" aria-current="false">Projects</a>
+<a href="organizations.html" aria-current="false">Organizations</a>
+<a href="contact.html" aria-current="false">Contact</a>
+      </div>
+    </nav>
+  </div>
+  
+<header class="hero">
+  <div>
+    <h1>I turn Briefs into Brands and Code into Clicks.</h1>
+    <p>I am a Creative Graphic Designer/Web Developer and Computer Scientist crafting delightful brands and high-performance responsive websites.</p>
+    <div class="actions">
+      <a class="btn" data-color="primary" href="projects.html">View Projects</a>
+      <a class="btn" data-color="accent" href="resume.html">Download Résumé</a>
+      <a class="btn" data-color="secondary" href="contact.html">Say Hello</a>
+    </div>
+  </div>
+  <div>
+    <img class="portrait" src="assets/img/profile.jpg" alt="Bonnie Soto portrait">
+  </div>
+</header>
+<main>
+  <div class="section-title"><div class="bar"></div><h2>Highlights</h2></div>
+  <div class="grid">
+    <div class="card col-4"><h3>Branding</h3><p>From logo to full identity systems.</p></div>
+    <div class="card col-4"><h3>UI/UX</h3><p>Accessible, responsive interfaces with just-right micro-interactions.</p></div>
+    <div class="card col-4"><h3>Front-End</h3><p>Clean, modern HTML/CSS/JS with performance in mind.</p></div>
+    <div class="card col-4"><h3>Coding</h3><p>JavaScript, Python, and more—turning ideas into code.</p></div>
+  </div>
+</main>
+<footer>© 2025 Bonnie Soto • Built with love and a little JavaScript sparkle ✨</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

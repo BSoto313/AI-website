@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • Bonnie Soto</title>
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Runs before styles load = no flash
+    (function () {
+      const stored = localStorage.getItem('mode') || 'auto';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const dark = stored === 'dark' || (stored === 'auto' && prefersDark);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      // Help form controls pick the right look in some browsers
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+    })();
+  </script>
+  <meta name="theme-color" content="#f89938">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="navwrap">
+    <nav>
+      <div class="brand"><span class="dot"></span><span>Bonnie&nbsp;Soto</span></div>
+      <div class="links">
+        <a href="index.html" aria-current="false">Home</a>
+<a href="about.html" aria-current="false">About</a>
+<a href="resume.html" aria-current="page">Resume</a>
+<a href="projects.html" aria-current="false">Projects</a>
+<a href="organizations.html" aria-current="false">Organizations</a>
+<a href="contact.html" aria-current="false">Contact</a>
+      </div>
+    </nav>
+  </div>
+  
+<header class="hero">
+  <div>
+    <h1>Résumé</h1>
+    <p>Highlights of education, certifications, and recent experience.</p>
+    <div class="actions">
+      <a class="btn" data-color="primary" href="bonnie_soto_resume.pdf" download>Download PDF</a>
+      <a class="btn" data-color="secondary" href="contact.html">Hire Me</a>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="grid">
+    <section class="card col-6">
+      <h3>Experience</h3>
+      <div class="timeline">
+        <div class="item"><div class="where">Brightpoint Community College (2025)</div><div>Web Dev / Graphic Design Intern</div></div>
+        <div class="item"><div class="where">Double Down Cloggers LLC (2025)</div><div>Lead Graphic / Web Designer</div></div>
+        <div class="item"><div class="where">New Horizon Dental Center / Pathways (2021)</div><div>Surgical Dental Assistant</div></div>
+        <div class="item"><div class="where">US Army (2007–2011)</div><div>Parachute Rigger</div></div>
+      </div>
+    </section>
+    <section class="card col-6">
+      <h3>Skills</h3>
+      <div class="badges">
+        <span class="badge">Illustrator</span><span class="badge">Animate</span><span class="badge">Photoshop</span><span class="badge">InDesign</span>
+        <span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">Python</span><span class="badge">JavaScript</span>
+      </div>
+      <h3 style="margin-top:18px">Education</h3>
+      <ul>
+        <li>Virginia State University — BVA Web/Graphic Design & BS Computer Science (AI focus), 2025–2029</li>
+        <li>Brightpoint Community College — AAS Web Design (Graphic Specialization), 2024–2025</li>
+        <li>Chattahoochee Valley Community College — Visual Communications / Graphic Design, 2011–2012</li>
+      </ul>
+      <h3 style="margin-top:18px">Certifications / Licenses</h3>
+      <ul>
+        <li>Google UI/UX</li>
+        <li>CIW Site Development</li>
+        <li>BAF Web/Graphic Design</li>
+        <li>BS Computer Science</li>
+        <li>AAS Web Design</li>
+        <li>Radiation Health & Safety</li>
+        <li>Basic Lifesaver</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer>Full résumé available as PDF.</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

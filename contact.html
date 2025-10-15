@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • Bonnie Soto</title>
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Runs before styles load = no flash
+    (function () {
+      const stored = localStorage.getItem('mode') || 'auto';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const dark = stored === 'dark' || (stored === 'auto' && prefersDark);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      // Help form controls pick the right look in some browsers
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+    })();
+  </script>
+  <meta name="theme-color" content="#f89938">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="navwrap">
+    <nav>
+      <div class="brand"><span class="dot"></span><span>Bonnie&nbsp;Soto</span></div>
+      <div class="links">
+        <a href="index.html" aria-current="false">Home</a>
+<a href="about.html" aria-current="false">About</a>
+<a href="resume.html" aria-current="false">Resume</a>
+<a href="projects.html" aria-current="false">Projects</a>
+<a href="organizations.html" aria-current="false">Organizations</a>
+<a href="contact.html" aria-current="page">Contact</a>
+
+      </div>
+    </nav>
+  </div>
+  
+<header class="hero">
+  <div>
+    <h1>Contact</h1>
+    <p>Tell me about your project—I'll bring the pixels and polish.</p>
+  </div>
+</header>
+<main>
+  <div class="grid">
+    <section class="card col-6">
+      <h3>Get in touch</h3>
+      <form id="contact-form">
+        <label>Name<br><input required type="text" name="name" placeholder="Your name"></label><br><br>
+        <label>Email<br><input required type="email" name="email" placeholder="you@example.com"></label><br><br>
+        <label>Subject<br><input required type="text" name="subject" placeholder="Project type / timeline"></label><br><br>
+        <label>Message<br><textarea required name="message" rows="6" placeholder="What are we building?"></textarea></label><br><br>
+        <button class="btn" data-color="primary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+</main>
+<footer>Response within 1–2 business days.</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

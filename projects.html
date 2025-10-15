@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • Bonnie Soto</title>
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Runs before styles load = no flash
+    (function () {
+      const stored = localStorage.getItem('mode') || 'auto';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const dark = stored === 'dark' || (stored === 'auto' && prefersDark);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      // Help form controls pick the right look in some browsers
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+    })();
+  </script>
+  <meta name="theme-color" content="#f89938">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="navwrap">
+    <nav>
+      <div class="brand"><span class="dot"></span><span>Bonnie&nbsp;Soto</span></div>
+      <div class="links">
+        <a href="index.html" aria-current="false">Home</a>
+<a href="about.html" aria-current="false">About</a>
+<a href="resume.html" aria-current="false">Resume</a>
+<a href="projects.html" aria-current="page">Projects</a>
+<a href="organizations.html" aria-current="false">Organizations</a>
+<a href="contact.html" aria-current="false">Contact</a>
+      </div>
+    </nav>
+  </div>
+  
+<header class="hero">
+  <div>
+    <h1>Projects</h1>
+    <p><a href="https://twnmom313.github.io/bsdesign/?name=Bonnie+Soto&email=bjs20390%40email.vccs.edu&message=Hi#top" target="_blank">Explore my Portfolio.</a></p>
+  </div>
+</header>
+<main>
+  <div class="grid">
+    <article class="card col-6">
+      <h3>Interactive Terminal</h3>
+      <div><!-- Terminal Box -->
+        <section class="card">
+          <div class="terminal" id="terminal" role="region" aria-label="Interactive terminal">
+            <div class="term-title">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <strong>Enter Code In This Box</strong>
+            </div>
+
+            <div class="term-output" id="term-output" aria-live="polite"></div>
+
+            <form id="term-form" autocomplete="off">
+              <span class="prompt">$</span>
+              <!-- replace your single-line input -->
+              <textarea id="term-input" rows="1" spellcheck="false"
+                placeholder="Type Python. Enter runs. Shift+Enter = newline."></textarea>
+              </form>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</main>
+<footer>More on request.</footer>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

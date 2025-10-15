@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • Bonnie Soto</title>
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Runs before styles load = no flash
+    (function () {
+      const stored = localStorage.getItem('mode') || 'auto';
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const dark = stored === 'dark' || (stored === 'auto' && prefersDark);
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      // Help form controls pick the right look in some browsers
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+    })();
+  </script>
+  <meta name="theme-color" content="#f89938">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="navwrap">
+    <nav>
+      <div class="brand"><span class="dot"></span><span>Bonnie&nbsp;Soto</span></div>
+      <div class="links">
+        <a href="index.html" aria-current="false">Home</a>
+<a href="about.html" aria-current="page">About</a>
+<a href="resume.html" aria-current="false">Resume</a>
+<a href="projects.html" aria-current="false">Projects</a>
+<a href="organizations.html" aria-current="false">Organizations</a>
+<a href="contact.html" aria-current="false">Contact</a>
+      </div>
+    </nav>
+  </div>
+  
+<header class="hero">
+  <div>
+    <h1>Hello There,</h1>
+    <p>I’m Bonnie Soto—a passionate graphic designer, web developer, and creative visionary dedicated to crafting stunning digital experiences. With a strong background in digital arts, I specialize in design, animation, and photography, bringing unique concepts to life with precision and creativity.</p>
+    <p>As a disabled U.S. Army Airborne veteran and the wife of a fellow veteran, I bring resilience, adaptability, and attention to detail into everything I do—whether it’s designing impactful visuals, developing functional websites, or crafting handmade creations. Over the years, I’ve worked with clients ranging from small businesses to large enterprises, always striving to deliver high-quality work that exceeds expectations.</p>
+    <p>Beyond my professional expertise, I’m also a homesteader, embracing self-sufficiency and creating a meaningful life for my family. Most importantly, I’m a proud mom to twins, Lilliana and Leonardo, who constantly inspire my creativity and drive.</p>
+    <p>With a strong educational foundation and a passion for blending technical skills with artistic flair, I’m committed to bringing brands, businesses, and personal projects to life. Let’s create something extraordinary together!</p>
+    <div class="badges">
+      <span class="badge">Branding</span>
+      <span class="badge">UI/UX</span>
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Python</span>
+      <span class="badge">Graphic Design</span>
+      <span class="badge">Animation</span>
+      <span class="badge">Photography</span>
+    </div>
+  </div>
+  <div><img class="portrait" src="assets/img/profile.jpg" alt="Bonnie at work"></div>
+</header>
+<main>
+  <div class="section-title"><div class="bar"></div><h2>Philosophy</h2></div>
+  <div class="card">
+    <p>A Computer Science and Visual Arts Major, with an interest in Artificial Intelligence, who loves Graphic/Web Design and has a Passion for Pixels!</p>
+  </div>
+</main>
+<footer>Let me bring your ideas to life with creativity and precision.</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
