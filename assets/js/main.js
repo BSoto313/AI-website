@@ -191,36 +191,4 @@ print(is_pal('Able was I ere I saw Elba'))`
     }
   };
 
-  // ------- Helpers -------
-  const history = [];
-  let historyIdx = -1;
-
-  function println(text = '', cls = '') {
-    const div = document.createElement('div');
-    div.className = `line ${cls}`.trim();
-    div.textContent = text;
-    out.appendChild(div);
-    out.scrollTop = out.scrollHeight;
-  }
-
-  function banner() {
-    println("Python Terminal — type 'help' to get started", 'ok');
-  }
-
-  function help() {
-    println("Available commands:", 'ok');
-    println("  help            • show this help");
-    println("  clear           • clear the screen");
-    println("  ls              • list example snippets");
-    println("  view <name>     • show snippet code  (e.g., view fizzbuzz)");
-    println("  run <name>      • insert snippet into the editor");
-    println("Or just type Python and press Enter. Shift+Enter inserts a newline.");
-  }
-
-  function ls() {
-    const names = Object.keys(exercises);
-    if (!names.length) {
-      return println("No exercises yet. Add some in JS.", "warn");
-    }
-    println(names.map(n => `• ${n} — ${exercises[n].desc}`).join("\n"));
-  }
+})();
